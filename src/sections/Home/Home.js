@@ -3,15 +3,12 @@ import { Typography, Button, makeStyles } from "@material-ui/core";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-scroll";
 import HomeContainer from "../../containers/HomeContainer";
-import VideoLogo from "../../components/VideoLogo";
-import { useTranslation } from "react-i18next";
 import loaderContext from "../../contexts/loaderContext";
 
 const Home = () => {
     const classes = useStyles();
     const { isLoading } = useContext(loaderContext);
     const controls = useAnimation();
-    const { t } = useTranslation();
 
     useEffect(() => {
         if (!isLoading) {
@@ -36,7 +33,7 @@ const Home = () => {
                     variant="h5"
                     style={{ marginBottom: "0px" }}
                 >
-                    {t("home_welcome")}
+                    Hi
                     <motion.div
                         style={{ display: "inline-block" }}
                         animate={{ rotate: [50, 90, 50] }}
@@ -44,10 +41,16 @@ const Home = () => {
                     >
                         👋
                     </motion.div>
-                    , {t("home_i")}
+                    , I'm
                 </Typography>
                 <motion.div animate={controls} custom={1}>
-                    <VideoLogo />
+                    <Typography 
+                        animate={controls} 
+                        variant="h2" 
+                        color="white"
+                    >
+                        PADMANABHAN MURLI
+                    </Typography>
                 </motion.div>
                 <Typography
                     component={motion.p}
@@ -57,7 +60,7 @@ const Home = () => {
                     color="secondary"
                     className={classes.subTitle}
                 >
-                    {t("home_what_i_do")}
+                    I like to build stuff.
                 </Typography>
                 <Typography
                     component={motion.p}
@@ -67,7 +70,7 @@ const Home = () => {
                     color="initial"
                     style={{ marginBottom: "0" }}
                 >
-                    {t("home_job")}
+                    Software Engineer
                 </Typography>
                 <Typography
                     component={motion.p}
@@ -77,7 +80,7 @@ const Home = () => {
                     color="initial"
                     style={{ marginBottom: "30px" }}
                 >
-                    {t("home_location")}
+                    Based in Bangalore, India.
                 </Typography>
                 <motion.div animate={controls} custom={5}>
                     <Button
@@ -91,7 +94,7 @@ const Home = () => {
                         color="primary"
                         size="large"
                     >
-                        {t("home_contact_btn")}
+                        Get in touch
                     </Button>
                 </motion.div>
             </div>
