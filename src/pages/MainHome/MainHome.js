@@ -9,6 +9,7 @@ import { useMediaQuery, useTheme } from "@material-ui/core";
 
 const MainHome = () => {
     const theme = useTheme()
+    // eslint-disable-next-line
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
     return (
         <motion.main

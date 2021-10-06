@@ -1,9 +1,9 @@
 const skillsList = [
-    { title: "React JS", value: 75 },
-    { title: "Node JS ", value: 60 },
-    { title: "Express JS ", value: 70 },
-    { title: "Firebase", value: 70 },
-    { title: "CSS", value: 80 },
+    { title: "Python", value: 80 },
+    { title: "Javascript", value: 70 },
+    { title: "ReactJS", value: 70 },
+    { title: "C++", value: 70 },
+    { title: "Git", value: 70 },
 ];
 const projectList = [
     {

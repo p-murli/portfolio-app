@@ -12,7 +12,7 @@ const Footer = () => {
             <Box className={classes.footer}>
                 {isMobile && <Social mobile />}
                 <Typography variant="body2" color="initial">
-                    © 2021 Mehdi BHA, Inc
+                    © 2021 Padmanabhan Murli
                 </Typography>
             </Box>
         </Container>
