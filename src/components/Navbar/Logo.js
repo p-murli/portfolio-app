@@ -7,7 +7,8 @@ const Logo = (props) => {
     const classes = useStyles();
     return (
         <Link spy smooth duration={500} offset={-70} to="home" className={classes.root}>
-            <Mehdibha {...props} />
+            {/* <Mehdibha {...props} /> */}
+            Padmanabhan Murli
         </Link>
     );
 };

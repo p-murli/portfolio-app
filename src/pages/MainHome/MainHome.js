@@ -5,7 +5,6 @@ import About from "../../sections/About";
 import Experience from "../../sections/Experience";
 import Projects from "../../sections/Projects";
 import Contact from "../../sections/Contact";
-import Background3d from "../../components/Background3d.js/Background3d";
 import { useMediaQuery, useTheme } from "@material-ui/core";
 
 const MainHome = () => {

@@ -103,20 +103,23 @@ const Menu = () => {
                     onSetActive={() => spyHandleChange(3)}
                 />
             </StyledTabs>
+            {/* Resume Download Button */}
             <motion.div custom={4} animate={controls}>
                 <Button
                     component={MuiLink}
-                    href="/resume.pdf"
+                    href="https://drive.google.com/file/d/1ZtP664WrKTSwUaHuDrvxrIiM2FJhALcO/view?usp=sharing"
+                    target="_blank"
                     variant="outlined"
                     color="primary"
                     underline="none"
                 >
-                    {t('menu_resume')}
+                    {/* {t('menu_resume')} */} Resume
                 </Button>
             </motion.div>
-            <motion.div custom={5} animate={controls}>
+            {/* Language selector button */}
+            {/* <motion.div custom={5} animate={controls}>
                 <LangSelector style={{ marginLeft: "32px" }} />
-            </motion.div>
+            </motion.div> */}
         </div>
     );
 };
