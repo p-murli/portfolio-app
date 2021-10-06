@@ -35,28 +35,31 @@ const projectList = [
 const experienceList = [
     {
         id: 0,
-        company: "Code Hub",
+        company: "Oracle",
+        designation: "Software Engineer Intern",
+        duration: "June 2021 - July 2021",
+        description: "sample exp",
         links: {
-            website: "https://www.codehub.tn",
-            facebook: "https://www.facebook.com/codehubtn/",
-            instagram: "https://www.instagram.com/codehub.coworking/",
+            website: "https://www.oracle.com/index.html",
         },
     },
     {
         id: 1,
-        company: "Dar Mounira",
+        company: "Khyateh Consulting (finiteloop.io)",
+        designation: "Summer Intern",
+        duration: "May 2019 - July 2019",
+        description: "sample exp",
         links: {
-            facebook: "https://www.facebook.com/profile.php?id=100063463714107",
-            instagram: "https://www.instagram.com/darmounira.official",
+            website: "https://finiteloop.io/"
         },
     },
-    {
-        id: 2,
-        company: "vapoter.tn",
-        links: {
-            instagram: "https://www.instagram.com/vapoter.tn/",
-        },
-    },
+    // {
+    //     id: 2,
+    //     company: "vapoter.tn",
+    //     links: {
+    //         instagram: "https://www.instagram.com/vapoter.tn/",
+    //     },
+    // },
 ];
 
 export { skillsList, projectList, experienceList };

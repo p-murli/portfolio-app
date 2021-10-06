@@ -3,11 +3,9 @@ import { makeStyles, Tabs, Tab, Typography, Box, Link, useTheme, useMediaQuery }
 import { Language, Facebook, Instagram } from "@material-ui/icons";
 import { experienceList } from "../../data";
 import IconBtn from "../../components/IconBtn";
-import { useTranslation } from "react-i18next";
 
 const StyledTabs = () => {
     const theme = useTheme();
-    const { t } = useTranslation();
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
     const classes = useStyles({ isMobile });
     const [value, setValue] = useState(0);
@@ -34,7 +32,7 @@ const StyledTabs = () => {
                 <TabPanel value={value} index={elem.id} key={elem.id}>
                     <Box mb={4}>
                         <Typography variant="h5">
-                            {t(`experience_${elem.id}_job`)} @{" "}
+                            {elem.designation} @{" "}
                             <Link
                                 href={elem.links.website || elem.links.facebook || elem.links.instagram}
                                 color="primary"
@@ -43,12 +41,12 @@ const StyledTabs = () => {
                             </Link>
                         </Typography>
                         <Typography variant="body2" color="textSecondary" fontSize="14">
-                            {t(`experience_${elem.id}_duration`)}
+                            {elem.duration}
                         </Typography>
                     </Box>
                     <Box mb={4}>
                         <Typography variant="body1" color="textPrimary">
-                            {t(`experience_${elem.id}_overview`)}
+                            {elem.description}
                         </Typography>
                     </Box>
                     <Box>
