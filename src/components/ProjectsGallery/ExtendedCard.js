@@ -127,20 +127,20 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: theme.shadows[8],
     },
     title: {
-        fontSize: "20px",
+        fontSize: "24px",
         fontWeight: 700,
         marginBottom: theme.spacing(1),
         color:theme.palette.secondary.contrastText
     },
     overview: {
-        fontSize: "14px",
+        fontSize: "16px",
         marginBottom: theme.spacing(1),
         color:theme.palette.secondary.contrastText,
         
     },
     technologies: {
-        fontSize: "15px",
-        color:"rgb(10,10,10)",
+        fontSize: "18px",
+        color:theme.palette.primary,
     },
     closeBtn: {
         position: "absolute",

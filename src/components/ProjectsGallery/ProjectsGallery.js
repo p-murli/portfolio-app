@@ -4,11 +4,9 @@ import { Grid, makeStyles } from "@material-ui/core";
 import Card from "./Card";
 import ExtendedCard from "./ExtendedCard";
 import { projectList } from "../../data";
-import { useTranslation } from "react-i18next";
 
 const ProjectsGallery = () => {
     const classes = useStyles();
-    const { t } = useTranslation()
     const [selectedId, setSelectedId] = useState(null);
 
     const getSelected = (id) => projectList.find((elem) => elem.id === id);
@@ -27,7 +25,7 @@ const ProjectsGallery = () => {
                         <Card
                             id={item.id}
                             title={item.title}
-                            overview={t(`projects_${item.id}_overview`)}
+                            overview={item.short_description}
                             backgroundImage={item.backgroundImage}
                             frontImage={item.frontImage}
                             technologies={item.technologies}
@@ -44,7 +42,7 @@ const ProjectsGallery = () => {
                         key={selectedId}
                         id={selectedId}
                         title={getSelected(selectedId).title}
-                        overview={t(`projects_${selectedId}_extended_overview`)}
+                        overview={getSelected(selectedId).long_description}
                         backgroundImage={getSelected(selectedId).backgroundImage}
                         frontImage={getSelected(selectedId).frontImage}
                         technologies={getSelected(selectedId).technologies}
