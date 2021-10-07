@@ -24,33 +24,10 @@ I've spent a non-trivial amount of effort building and designing this iteration 
 ### Screenshots
 
 <p align="center">
-  <p align="center">Light Mode</p>
-  <img src="screenshots/light.png" alt="Home section">
-</p>
-<p align="center">
   <p align="center">Home Section</p>
-  <img src="screenshots/home.png" alt="Home section">
+  <img src="screenshots/homepage.jpg" alt="Home section">
 </p>
 <br />
-<p align="center">
-  <p align="center">About Section</p>
-  <img src="screenshots/about.png" alt="About section">
-</p>
-<br />
-<p align="center">
-  <p align="center">Experience Section</p>
-  <img src="screenshots/experience.png" alt="Experience section">
-</p>
-<br />
-<p align="center">
-  <p align="center">Projects Section</p>
-  <img src="screenshots/projects.png" alt="Projects section">
-</p>
-<br />
-<p align="center">
-  <p align="center">Contact Section</p>
-  <img src="screenshots/contact.png" alt="Contact section">
-</p>
 
 ### Built With
 
