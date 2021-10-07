@@ -15,7 +15,7 @@
 ## About The Project
 
 
-The website is live at <a href="https://p-murli.github.io">https://p-murli.github.io</a>
+The website is live at <a href="https://p-murli.github.io/portfolio-app/">https://p-murli.github.io/portfolio-app/</a>
 
 ### Forking this project
 If someone wants to use this code on his own website, the answer is **YES** BUT please with credits !
